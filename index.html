@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>Harsheeta</title>
     <meta charset="utf-8" />
@@ -8,7 +8,8 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         .menu-icon {
-            font-size: 3em; /* Increase the size of the menu icon */
+            font-size: 2em; /* Increase the size of the menu icon */
+            cursor: pointer; /* Change cursor to pointer */
         }
 
         .horizontal-list {
@@ -42,7 +43,7 @@
         }
 
         footer .inner h2 {
-            font-size: 45px;
+            font-size: 40px;
             margin-bottom: 40px; /* Increase space between heading and contact details */
         }
 
@@ -57,6 +58,59 @@
         .back-to-top i {
             color: #ff0000; /* Change this color to whatever you prefer */
             font-size: 2em; /* Optional: Adjust the size if needed */
+        }
+
+        /* Sidebar Menu */
+        #menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 100%;
+            background-color: #1e2336;
+            z-index: 1000;
+            padding-top: 60px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        #menu ul li {
+            margin: 20px 0;
+        }
+
+        #menu ul a {
+            color: white;
+            font-size: 1.7em;
+            text-decoration: none;
+        }
+
+        #menu.open {
+            transform: translateX(0);
+        }
+
+        /* General Font Sizes */
+        h1 {
+            font-size: 2.5em; /* General heading size */
+        }
+
+        h2 {
+            font-size: 2em; /* General subheading size */
+        }
+
+        h3 {
+            font-size: 1.5em; /* General smaller heading size */
+        }
+
+        p {
+            font-size: 1.2em; /* General paragraph size */
         }
 
         /* Media Queries for Mobile */
@@ -82,11 +136,11 @@
 
             /* Adjust header font size */
             header .major h1 {
-                font-size: 30px; /* Reduce size for mobile */
+                font-size: 1.5em; /* Reduce size for mobile */
             }
 
             .content p {
-                font-size: 18px; /* Reduce size for mobile */
+                font-size: 1em; /* Reduce size for mobile */
             }
 
             /* Stack tiles vertically on mobile */
@@ -99,6 +153,14 @@
                 flex: 1 1 100%; /* Full width on mobile */
                 margin: 10px 0;
             }
+
+            footer .inner h2 {
+                font-size: 1.5em; /* Reduce footer heading size for mobile */
+            }
+
+            footer .inner span {
+                font-size: 1em; /* Reduce footer text size for mobile */
+            }
         }
     </style>
 </head>
@@ -106,18 +168,18 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo" style="font-size: 2em;"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <a href="index.html" class="logo" style="font-size: 1em;"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
             <nav>
-                <a href="#menu" class="menu-icon" style="font-size: 1.5em;">Menu</a>
+                <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
             </nav>
         </header>
 
         <!-- Menu -->
         <nav id="menu">
             <ul class="links">
-                <li><a href="index.html" style="font-size: 1.7em;">Home</a></li>
-                <li><a href="about.html" style="font-size: 1.7em;">About</a></li>
-                <li><a href="certifications.html" style="font-size: 1.7em;">Certificates</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="certifications.html">Certificates</a></li>
             </ul>
         </nav>
 
@@ -125,10 +187,10 @@
         <section id="banner" class="major">
             <div class="inner">
                 <header class="major">
-                    <h1 style="font-size: 45px;">Hi, I am Harsheeta</h1>
+                    <h1>Hi, I am Harsheeta</h1>
                 </header>
                 <div class="content">
-                    <p style="font-size: 22px;">Data-Driven Machine Learning Enthusiast Passionate About Wearable Technologies and building software products</p>
+                    <p>Data-Driven Machine Learning Enthusiast Passionate About Wearable Technologies and building software products</p>
                     <ul class="actions">
                         <li><a href="#one" class="button next scrolly">Get Started</a></li>
                     </ul>
@@ -221,9 +283,9 @@
             <section id="certifications" class="major">
                 <div class="inner">
                     <header class="major">
-                        <h2 style="font-size: 45px;">Certifications</h2>
+                        <h2>Certifications</h2>
                     </header>
-                    <ul style="font-size: 35px;">
+                    <ul>
                         <li><a href="certifications.html#cert1">Microsoft Certified Azure AI Engineer Associate</a></li>
                         <li><a href="certifications.html#cert2">Microsoft Certified Azure Data Scientist Associate</a></li>
                         <li><a href="certifications.html#cert3">IBM Data Scientist professional certificates</a></li>
@@ -288,19 +350,19 @@
                         <a href="https://github.com/Harsheeta06" class="icon brands alt fa-github" style="font-size: 1.5em;">
                             <span class="label">GitHub</span>
                         </a>
-                        <span style="font-size: 1.5em; text-decoration: none;"><a href="https://github.com/Harsheeta06" class="no-underline">Harsheeta06</a></span>
+                        <span style="font-size: 1.2em; text-decoration: none;"><a href="https://github.com/Harsheeta06" class="no-underline">Harsheeta06</a></span>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/harsheetav/" class="icon brands alt fa-linkedin-in" style="font-size: 1.5em;">
                             <span class="label">LinkedIn</span>
                         </a>
-                        <span style="font-size: 1.5em; text-decoration: none;"><a href="https://www.linkedin.com/in/harsheetav/" class="no-underline">Harsheetav</a></span>
+                        <span style="font-size: 1.2em; text-decoration: none;"><a href="https://www.linkedin.com/in/harsheetav/" class="no-underline">Harsheetav</a></span>
                     </li>
                     <li>
                         <a href="mailto:harsheetamorey@gmail.com" class="icon solid alt fa-envelope" style="font-size: 1.5em;">
                             <span class="label">Email</span>
                         </a>
-                        <span style="font-size: 1.5em; text-decoration: none;">harsheetamorey@gmail.com</span>
+                        <span style="font-size: 1.2em; text-decoration: none;">harsheetamorey@gmail.com</span>
                     </li>
                 </ul>
                 <ul class="copyright">
@@ -319,6 +381,16 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.classList.contains('open')) {
+                    menu.classList.remove('open');
+                } else {
+                    menu.classList.add('open');
+                }
+            }
+        </script>
     </div>
 </body>
 </html>

@@ -9,15 +9,15 @@
     <style>
         /* Higher specificity for the styles */
         body h2 {
-            font-size: 2.6em !important; /* Adjust this value as needed */
+            font-size: 2.5em !important; /* Adjust this value as needed */
         }
 
         body h3 {
-            font-size: 1.4em !important; /* Adjust this value as needed */
+            font-size: 1.2em !important; /* Adjust this value as needed */
         }
 
         body p {
-            font-size: 1.0em !important; /* Adjust this value as needed */
+            font-size: 0.9em !important; /* Adjust this value as needed */
         }
 
         .cert-grid {
@@ -36,9 +36,17 @@
             box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px; /* Add this line to increase space */
         }
-        
+
         ul li img {
             margin-bottom: 30px; /* Adjust this value as needed */
+            max-width: 100%; /* Ensure image fits within its container */
+        }
+
+        ul li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         /* Media Queries for Mobile */
@@ -62,6 +70,16 @@
 
             .cert-grid img {
                 max-height: 200px; /* Adjust height for mobile */
+            }
+
+            ul li {
+                align-items: flex-start; /* Align items to the start */
+                text-align: left; /* Left align text */
+            }
+
+            ul li img {
+                margin-bottom: 10px; /* Reduce margin for mobile */
+                max-width: 90%; /* Ensure image fits within its container */
             }
         }
     </style>
