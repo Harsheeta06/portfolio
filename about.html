@@ -47,6 +47,34 @@
             line-height: 1.8;
             color: #ddd;
         }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 20px;
+                margin-top: 50px; /* Adjust margin for mobile */
+            }
+            .about-text {
+                max-width: 100%;
+                margin-right: 0;
+                font-size: 1em; /* Reduce font size for mobile */
+            }
+            .about-image {
+                position: static; /* Make image positioning static */
+                margin-top: 20px; /* Add margin at the top */
+                width: 100%;
+                text-align: center;
+            }
+            .about-image img {
+                width: 80%; /* Adjust image size for mobile */
+            }
+            .about-text h2 {
+                font-size: 2em; /* Reduce font size for mobile */
+            }
+            .about-text p {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -74,7 +102,7 @@
         </nav>
 
         <!-- About Section -->
-        <section class="about-section" style="margin-top: 190px;"> <!-- Inline style for manual adjustment -->
+        <section class="about-section">
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>Hello! I'm Harsheeta Venkoba Rao, a passionate Machine Learning Engineer and Software Developer. With a background in AI and data science, I love creating innovative solutions that leverage the power of modern web technologies and cloud platforms. I believe in continuous learning and consider myself a fast learner, constantly striving to enhance my skills and knowledge.</p>

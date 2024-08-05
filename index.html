@@ -58,6 +58,48 @@
             color: #ff0000; /* Change this color to whatever you prefer */
             font-size: 2em; /* Optional: Adjust the size if needed */
         }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            /* Adjust menu icon size for mobile */
+            .menu-icon {
+                font-size: 2.5em; /* Increase size for mobile */
+            }
+
+            /* Adjust horizontal list to be vertical on mobile */
+            .horizontal-list {
+                flex-direction: column;
+            }
+
+            .horizontal-list li {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .horizontal-list li:last-child {
+                margin-bottom: 0;
+            }
+
+            /* Adjust header font size */
+            header .major h1 {
+                font-size: 30px; /* Reduce size for mobile */
+            }
+
+            .content p {
+                font-size: 18px; /* Reduce size for mobile */
+            }
+
+            /* Stack tiles vertically on mobile */
+            .tiles {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .tiles article {
+                flex: 1 1 100%; /* Full width on mobile */
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body class="is-preload">

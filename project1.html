@@ -88,6 +88,37 @@
             text-align: center;
             width: 120px;
         }
+        
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .major h1, .major h3 {
+                font-size: 1.5em; /* Reduce font size for mobile */
+            }
+            .major p, .major ul {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+            .project-details p, .project-details li {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+            .spotlights {
+                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
+                gap: 10px; /* Reduce gap for mobile */
+            }
+            .spotlights .content {
+                margin-bottom: 20px; /* Add margin to separate content */
+            }
+            .tech-icons .icon {
+                width: 80px; /* Reduce icon size for mobile */
+                height: 80px; /* Reduce icon size for mobile */
+            }
+            .tech-icons .icon i {
+                font-size: 1.5em; /* Reduce icon font size for mobile */
+            }
+            .tech-icons .icon span {
+                bottom: -20px; /* Adjust positioning for mobile */
+                font-size: 0.7em; /* Reduce text size for mobile */
+            }
+        }
     </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 </head>
@@ -106,8 +137,6 @@
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="actions stacked">
                 <li><a href="#" class="button primary fit">Get Started</a></li>

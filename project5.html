@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UW courses - Harsheeta</title>
+    <title>AI Applications - Harsheeta</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -79,6 +79,37 @@
             max-width: 100%;
             max-height: 100%;
         }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .major h1, .major h3 {
+                font-size: 1.5em; /* Reduce font size for mobile */
+            }
+            .major p, .major ul {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+            .project-details p, .project-details li {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+            .spotlights {
+                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
+                gap: 10px; /* Reduce gap for mobile */
+            }
+            .spotlights .content {
+                margin-bottom: 20px; /* Add margin to separate content */
+            }
+            .tech-icons .icon {
+                width: 80px; /* Reduce icon size for mobile */
+                height: 80px; /* Reduce icon size for mobile */
+            }
+            .tech-icons .icon i {
+                font-size: 1.5em; /* Reduce icon font size for mobile */
+            }
+            .tech-icons .icon span {
+                bottom: -20px; /* Adjust positioning for mobile */
+                font-size: 0.7em; /* Reduce text size for mobile */
+            }
+        }
     </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 </head>
@@ -97,8 +128,6 @@
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="actions stacked">
                 <li><a href="#" class="button primary fit">Get Started</a></li>
@@ -124,7 +153,6 @@
         <!-- Main -->
         <div id="main">
             <!-- Project Details Section -->
-            
             <section id="more-info" class="spotlights">
                 <div class="content project-details">
                     <div class="inner">
@@ -141,9 +169,8 @@
                             <li>Project 4 AI Rate My Professor: RAG OpenAI Vectors</li>
                             <li>Project 5 Team project working on building a real life use case to ship to 1000 users</li>
                         </ul>
-                        
                     </div>
-                    
+                </div>
             </section>
         </div>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UW courses - Harsheeta</title>
+    <title>Machine Learning Projects - Harsheeta</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -88,6 +88,37 @@
             text-align: center;
             width: 120px;
         }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .major h1, .major h3 {
+                font-size: 1.5em; /* Reduce font size for mobile */
+            }
+            .major p, .major ul {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+            .project-details p, .project-details li {
+                font-size: 1.2em; /* Reduce font size for mobile */
+            }
+            .spotlights {
+                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
+                gap: 10px; /* Reduce gap for mobile */
+            }
+            .spotlights .content {
+                margin-bottom: 20px; /* Add margin to separate content */
+            }
+            .tech-icons .icon {
+                width: 80px; /* Reduce icon size for mobile */
+                height: 80px; /* Reduce icon size for mobile */
+            }
+            .tech-icons .icon i {
+                font-size: 1.5em; /* Reduce icon font size for mobile */
+            }
+            .tech-icons .icon span {
+                bottom: -20px; /* Adjust positioning for mobile */
+                font-size: 0.7em; /* Reduce text size for mobile */
+            }
+        }
     </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 </head>
@@ -106,8 +137,6 @@
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="actions stacked">
                 <li><a href="#" class="button primary fit">Get Started</a></li>
@@ -119,7 +148,7 @@
         <section id="banner" class="major">
             <div class="inner">
                 <header class="major">
-                    <h1>Developed Machine learning classifiers And Deep Learning Models From Scratch</h1>
+                    <h1>Developed Machine Learning Classifiers and Deep Learning Models From Scratch</h1>
                 </header>
                 <div class="content">
                     <p></p>
@@ -139,11 +168,10 @@
                         <header class="major">
                             <h3>Project Details</h3>
                         </header>
-                        <p>Built Machine learning classifiers and deep learning models from scratch as part of the courseworks at Universoty of Washington, Seattle</p>
+                        <p>Built machine learning classifiers and deep learning models from scratch as part of the coursework at the University of Washington, Seattle.</p>
                         <ul>
                             <li>EE 511: Advanced Introduction to Machine Learning, Prof. Jeff Bilmes</li>
                             <li>CSE 599: Advanced Deep Learning, Prof. Ranjay Krishna</li>
-                          
                         </ul>
                         <p>Achieved 99.98% accuracy for fruit classification class competition.</p>
                     </div>

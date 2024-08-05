@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>Certifications - Harsheeta</title>
     <meta charset="utf-8" />
@@ -39,6 +39,30 @@
         
         ul li img {
             margin-bottom: 30px; /* Adjust this value as needed */
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            body h2 {
+                font-size: 2em !important; /* Adjust this value as needed */
+            }
+
+            body h3 {
+                font-size: 1.2em !important; /* Adjust this value as needed */
+            }
+
+            body p {
+                font-size: 0.9em !important; /* Adjust this value as needed */
+            }
+
+            .cert-grid {
+                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
+                gap: 10px; /* Reduce gap for mobile */
+            }
+
+            .cert-grid img {
+                max-height: 200px; /* Adjust height for mobile */
+            }
         }
     </style>
 </head>

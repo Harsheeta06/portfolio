@@ -4503,3 +4503,106 @@ input, select, textarea {
 			text-align: center;
 			width: 120px;
 		}
+
+		/* General Styles */
+		body {
+			font-family: 'Arial', sans-serif;
+			background: #242943;
+			color: #ffffff;
+		}
+
+		/* Menu Icon */
+		.menu-icon {
+			font-size: 2em; /* Default size */
+		}
+
+		/* Horizontal List for Contact Links */
+		.horizontal-list {
+			display: flex;
+			flex-direction: row;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.horizontal-list li {
+			display: flex;
+			align-items: center;
+			margin-right: 30px; /* Adjust spacing between items */
+		}
+
+		.horizontal-list li span {
+			margin-left: 10px;
+		}
+
+		.horizontal-list li:last-child {
+			margin-right: 0;
+		}
+
+		footer .inner {
+			text-align: center;
+			padding: 20px;
+		}
+
+		footer .inner h2 {
+			font-size: 45px;
+			margin-bottom: 40px; /* Increase space between heading and contact details */
+		}
+
+		a.no-underline {
+			text-decoration: none; /* Remove underline from these specific links */
+		}
+
+		a.no-underline:hover {
+			text-decoration: none; /* Ensure underline doesn't appear on hover */
+		}
+
+		.back-to-top i {
+			color: #ff0000; /* Change this color to whatever you prefer */
+			font-size: 2em; /* Optional: Adjust the size if needed */
+		}
+
+		/* Media Queries for Mobile */
+		@media (max-width: 768px) {
+			/* Adjust menu icon size for mobile */
+			.menu-icon {
+				font-size: 2.5em; /* Increase size for mobile */
+			}
+
+			/* Adjust horizontal list to be vertical on mobile */
+			.horizontal-list {
+				flex-direction: column;
+			}
+
+			.horizontal-list li {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+
+			.horizontal-list li:last-child {
+				margin-bottom: 0;
+			}
+
+			/* Adjust header font size */
+			header .major h1 {
+				font-size: 30px; /* Reduce size for mobile */
+			}
+
+			.content p {
+				font-size: 18px; /* Reduce size for mobile */
+			}
+
+			/* Stack tiles vertically on mobile */
+			.tiles {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.tiles article {
+				flex: 1 1 100%; /* Full width on mobile */
+				margin: 10px 0;
+			}
+		}
