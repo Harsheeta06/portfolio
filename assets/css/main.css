@@ -3950,20 +3950,20 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
-
+/*
 		.scroll-to-top {
 			position: fixed;
 			bottom: 20px;
 			right: 20px;
 			padding: 10px 20px;
-			background: linear-gradient(to right, #333, #555); /* Adjust colors as needed */
+			background: linear-gradient(to right, #333, #555);  Adjust colors as needed 
 			color: #fff;
 			border: none;
 			border-radius: 5px;
 			cursor: pointer;
 			display: none;
 			transition: opacity 0.3s ease;
-		}
+		}*/
 		
 		.scroll-to-top.visible {
 			display: block;
