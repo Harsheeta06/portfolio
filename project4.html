@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UW courses - Harsheeta</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .major h1, .major h3 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .major p, .major ul {
+            font-size: 1.75em; /* Increased font size */
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .project-details p, .project-details li {
+            font-size: 1.75em; /* Increased font size */
+            line-height: 1.8; /* Adjusted line height for better readability */
+            text-align: justify; /* Justify text */
+        }
+        .spotlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .spotlights .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .spotlights .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .spotlights .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul.actions {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .tech-section {
+            margin: 50px 0;
+        }
+        .tech-section .inner {
+            display: flex;
+            flex-direction: column;
+        }
+        .tech-icons {
+            display: flex;
+            justify-content: flex-end; /* Align icons to the right */
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .tech-icons .icon {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            position: relative;
+            transform: none; /* Remove rotation */
+        }
+        .tech-icons .icon img {
+            max-width: 100%;
+            max-height: 100%;
+            transform: none; /* Remove rotation */
+        }
+    </style>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Get Started</a></li>
+                <li><a href="#" class="button fit">Log In</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1>Youtube Clone: Mimics Core Functionalities Of youtube app</h1>
+                </header>
+                <div class="content">
+                    <p></p>
+                    <ul class="actions">
+                        <li><a href="#details" class="button next scrolly">Learn More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Project Details Section -->
+            
+            <section id="more-info" class="spotlights">
+                <div class="content project-details">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Project Description</h3>
+                        </header>
+                        <p>This project is a comprehensive YouTube clone application designed to mimic the core functionalities of YouTube. The application allows users to upload, process, store, and watch videos. It leverages modern web technologies and cloud services to provide a scalable and efficient video-sharing platform.</p>
+                        <p><strong>Technologies Used</strong></p>
+                        <p><strong>Frontend:</strong></p>
+                        <ul>
+                            <li>React.js for building the user interface</li>
+                            <li>Next.js for server-side rendering and routing</li>
+                            <li>CSS and Bootstrap for styling</li>
+                        </ul>
+                        <p><strong>Backend:</strong></p>
+                        <ul>
+                            <li>Node.js and Express.js for building the server</li>
+                            <li>Firebase Authentication for user authentication</li>
+                            <li>Google Cloud Functions for serverless backend logic</li>
+                            <li>Firestore for real-time database and storage</li>
+                            <li>Google Cloud Storage for storing video files</li>
+                            <li>Google Pub/Sub for message queuing</li>
+                            <li>Google Cloud Run for deploying containerized applications</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -3950,3 +3950,556 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+		.scroll-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			padding: 10px 20px;
+			background: linear-gradient(to right, #333, #555); /* Adjust colors as needed */
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			display: none;
+			transition: opacity 0.3s ease;
+		}
+		
+		.scroll-to-top.visible {
+			display: block;
+			opacity: 1;
+		}
+		
+		.scroll-to-top:hover {
+			background: linear-gradient(to right, #555, #777); /* Adjust hover colors as needed */
+		}
+		
+		
+		/* Larger Fonts and Improved Styling */
+		
+		body {
+			font-size: 18px;
+			line-height: 1.6
+		}
+
+		/* Center the content and remove the right side empty box */
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			min-height: 100vh; /* Full height to center vertically */
+			margin: 0 auto;
+		}
+
+		/* Increase font size */
+		.contact-info .icon,
+		.contact-info a {
+			font-size: 1.5em; /* Adjust this size as needed */
+		}
+
+		/* Remove unnecessary padding or margins that might cause alignment issues */
+		.contact-item {
+			margin: 10px 0; /* Add some margin between items for better spacing */
+			padding: 0;
+		}
+
+		#one .major h3 a {
+			font-size: 38px; /* Adjust the font size as needed */
+		}
+		
+		#one .major p {
+			font-size: 30px; /* Adjust the font size as needed */
+		}
+
+		/* Contact Section Styling */
+		/* Contact Section Styling */
+		#contact {
+			background: #1c1e26; /* Change this to match your previous background color */
+			padding: 2em 0;
+			color: #fff;
+		}
+
+		#contact .inner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 2em;
+			flex-wrap: wrap;
+		}
+
+		.contact-method {
+			text-align: center;
+			flex: 1 1 200px;
+			min-width: 200px;
+		}
+
+		.contact-method .icon {
+			font-size: 2em;
+			margin-bottom: 0.5em;
+			color: #fff;
+		}
+
+		.contact-method h3 {
+			margin: 0.5em 0;
+			font-size: 1.5em;
+		}
+
+		.contact-method a {
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 1px dotted #fff;
+			transition: color 0.3s, border-bottom-color 0.3s;
+		}
+
+		.contact-method a:hover {
+			color: #ff9900; /* Change to your preferred color */
+			border-bottom-color: #ff9900;
+		}
+		/* Footer Icons Styling */
+		#footer .icons {
+			display: flex;
+			justify-content: center;
+			gap: 1em;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		#footer .icons li {
+			display: inline;
+		}
+
+		#footer .icons .icon {
+			font-size: 1.5em;
+			color: #fff;
+			transition: color 0.3s;
+		}
+
+		#footer .icons .icon:hover {
+			color: #ff9900; /* Change to your preferred hover color */
+		}
+
+		/* Footer Icons Styling */
+		#footer .inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		#footer .icons {
+			display: flex;
+			justify-content: flex-start; /* Aligns icons to the left */
+			gap: 1em;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		#footer .icons li {
+			display: inline;
+		}
+
+		#footer .icons .icon {
+			font-size: 1.5em;
+			color: #fff;
+			transition: color 0.3s;
+		}
+
+		#footer .icons .icon:hover {
+			color: #ff9900; /* Change to your preferred hover color */
+		}
+
+		#footer .copyright {
+			display: flex;
+			justify-content: flex-end; /* Aligns copyright to the right */
+			gap: 1em;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			flex-grow: 1;
+		}
+		/* Add padding to the tiles section to create space on the sides */
+		#main {
+			padding: 0 2em; /* Adjust the value as needed for the desired space */
+		}
+
+		/* Ensure the tiles take the full width minus the padding */
+		#main .tiles {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1em; /* Adjust the gap between tiles if needed */
+			justify-content: space-between;
+		}
+
+		#main .tiles article {
+			flex: 1 1 calc(33.333% - 1em); /* Adjust the width of the tiles */
+			box-sizing: border-box; /* Ensure padding and border are included in the width */
+		}
+
+		/* Ensure the images fit within the tiles */
+		#tech .tiles {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1em; /* Adjust the gap as needed */
+			justify-content: space-between;
+		}
+
+		#tech .tiles article {
+			flex: 1 1 calc(50% - 1em); /* Two items per row with some gap */
+			box-sizing: border-box;
+		}
+
+		#tech .tiles .image img {
+			width: 100%;
+			height: auto; /* Ensure the image maintains its aspect ratio */
+			object-fit: cover; /* Ensure the image covers the entire area */
+		}
+		/* Ensure the images fit within the tiles */
+		#tech .tiles {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1em; /* Adjust the gap as needed */
+			justify-content: space-between;
+		}
+
+		#tech .tiles article {
+			box-sizing: border-box;
+		}
+
+		#tech .tiles article:first-child,
+		#tech .tiles article:nth-child(2) {
+			flex: 1 1 calc(50% - 1em); /* Two items per row with some gap */
+		}
+
+		#tech .tiles article:nth-child(3),
+		#tech .tiles article:nth-child(4) {
+			flex: 1 1 100%; /* Each of these items will take the full width */
+		}
+
+		#tech .tiles .image img {
+			width: 100%;
+			height: auto; /* Ensure the image maintains its aspect ratio */
+			object-fit: cover; /* Ensure the image covers the entire area */
+		}
+
+		/* Adjusting the header logo and menu */
+		#header .logo {
+			font-size: 2em; /* Adjust the font size as needed */
+			font-weight: bold;
+		}
+
+		#header nav a {
+			font-size: 1.5em; /* Adjust the font size as needed */
+		}
+
+		/* Align the banner content to the left */
+		#banner.major .inner {
+			text-align: left;
+		}
+
+		#banner.major .inner header.major h1 {
+			font-size: 45px; /* You can keep this inline or move it here */
+		}
+
+		#banner.major .inner .content p {
+			font-size: 28px; /* You can keep this inline or move it here */
+		}
+
+		#banner.major .inner .actions {
+			justify-content: flex-start; /* Align buttons to the left */
+		}
+		
+		/* Adjusting the header logo and menu */
+		#header .logo {
+			font-size: 2em; /* Adjust the font size as needed */
+			font-weight: bold;
+		}
+
+		#header nav a {
+			font-size: 1.5em; /* Adjust the font size as needed */
+		}
+
+		/* Align the banner content to the left */
+		#banner.major .inner {
+			text-align: left;
+		}
+
+		#banner.major .inner header.major h1 {
+			font-size: 45px; /* You can keep this inline or move it here */
+		}
+
+		#banner.major .inner .content p {
+			font-size: 30px; /* You can keep this inline or move it here */
+		}
+
+		#banner.major .inner .actions {
+			justify-content: flex-start; /* Align buttons to the left */
+		}
+
+		/* Increase the size of the menu items */
+		#menu ul.links li a {
+			font-size: 1.5em; /* Adjust the font size as needed */
+			text-transform: uppercase; /* Optional: to make the text uppercase */
+		}
+
+		#menu ul.actions.stacked {
+			display: none; /* Hide the actions ul if it's empty */
+		}
+
+		.menu-icon {
+			font-size: 4em; /* Increase the size of the menu icon */
+		}
+
+		body {
+			font-family: 'Arial', sans-serif;
+		}
+		
+		.major h1, .major h3 {
+			font-size: 2.5em;
+			font-weight: bold;
+		}
+		
+		.major p, .major ul {
+			font-size: 1.5em;
+		}
+		
+		.content ul {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+		
+		.content ul li {
+			margin-bottom: 10px;
+		}
+		
+		.project-details p, .project-details li {
+			font-size: 1.25em;
+			line-height: 1.6;
+		}
+		
+		.spotlights {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+		
+		.spotlights .content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		.spotlights .image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.spotlights .image img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		ul.actions {
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		body {
+			font-family: 'Arial', sans-serif;
+		}
+		
+		.major h1, .major h3 {
+			font-size: 2.5em;
+			font-weight: bold;
+		}
+		
+		.major p, .major ul {
+			font-size: 1.5em;
+		}
+		
+		.content ul {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+		
+		.content ul li {
+			margin-bottom: 10px;
+		}
+		
+		.project-details p, .project-details li {
+			font-size: 1.25em;
+			line-height: 1.6;
+		}
+		
+		.spotlights {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+		
+		.spotlights .content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		.spotlights .image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.spotlights .image img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		ul.actions {
+			list-style-type: none;
+			padding-left: 0;
+		}
+		
+		.tech-section {
+			margin: 50px 0;
+		}
+		
+		.tech-section .inner {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.tech-icons {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		
+		.tech-icons .icon {
+			width: 120px;
+			height: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transform: rotate(45deg);
+			background-color: rgba(0, 0, 0, 0.1);
+			margin: 10px;
+			position: relative;
+		}
+		
+		.tech-icons .icon i {
+			transform: rotate(-45deg);
+			font-size: 2em;
+			color: #fff;
+		}
+		
+		.tech-icons .icon span {
+			position: absolute;
+			bottom: -30px;
+			transform: rotate(-45deg);
+			font-size: 0.9em;
+			text-align: center;
+			width: 120px;
+		}
+
+		body {
+			font-family: 'Arial', sans-serif;
+		}
+		
+		.major h1, .major h3 {
+			font-size: 2.5em;
+			font-weight: bold;
+		}
+		
+		.major p, .major ul {
+			font-size: 1.5em;
+		}
+		
+		.content ul {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+		
+		.content ul li {
+			margin-bottom: 10px;
+		}
+		
+		.project-details p, .project-details li {
+			font-size: 1.25em;
+			line-height: 1.6;
+		}
+		
+		.spotlights {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+		
+		.spotlights .content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		.spotlights .image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.spotlights .image img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		ul.actions {
+			list-style-type: none;
+			padding-left: 0;
+		}
+		
+		.tech-section {
+			margin: 50px 0;
+		}
+		
+		.tech-section .inner {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.tech-icons {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		
+		.tech-icons .icon {
+			width: 120px;
+			height: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transform: rotate(45deg);
+			background-color: rgba(0, 0, 0, 0.1);
+			margin: 10px;
+			position: relative;
+		}
+		
+		.tech-icons .icon i {
+			transform: rotate(-45deg);
+			font-size: 2em;
+			color: #fff;
+		}
+		
+		.tech-icons .icon span {
+			position: absolute;
+			bottom: -30px;
+			transform: rotate(-45deg);
+			font-size: 0.9em;
+			text-align: center;
+			width: 120px;
+		}

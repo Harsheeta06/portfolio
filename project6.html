@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UW courses - Harsheeta</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .major h1, .major h3 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .major p, .major ul {
+            font-size: 1.75em; /* Increased font size */
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .project-details p, .project-details li {
+            font-size: 1.9em; /* Increased font size */
+            line-height: 1.8; /* Adjusted line height for better readability */
+        }
+        .spotlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .spotlights .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .spotlights .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .spotlights .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul.actions {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .tech-section {
+            margin: 50px 0;
+        }
+        .tech-section .inner {
+            display: flex;
+            flex-direction: column;
+        }
+        .tech-icons {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .tech-icons .icon {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            position: relative;
+        }
+        .tech-icons .icon i {
+            transform: rotate(-45deg);
+            font-size: 2em;
+            color: #fff;
+        }
+        .tech-icons .icon span {
+            position: absolute;
+            bottom: -30px;
+            transform: rotate(-45deg);
+            font-size: 0.9em;
+            text-align: center;
+            width: 120px;
+        }
+    </style>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="#" class="button primary fit">Get Started</a></li>
+                <li><a href="#" class="button fit">Log In</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1>Developed Machine learning classifiers And Deep Learning Models From Scratch</h1>
+                </header>
+                <div class="content">
+                    <p></p>
+                    <ul class="actions">
+                        <li><a href="#details" class="button next scrolly">Learn More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Project Details Section -->
+            <section id="details" class="spotlights">
+                <div class="content project-details">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Project Details</h3>
+                        </header>
+                        <p>Built Machine learning classifiers and deep learning models from scratch as part of the courseworks at Universoty of Washington, Seattle</p>
+                        <ul>
+                            <li>EE 511: Advanced Introduction to Machine Learning, Prof. Jeff Bilmes</li>
+                            <li>CSE 599: Advanced Deep Learning, Prof. Ranjay Krishna</li>
+                          
+                        </ul>
+                        <p>Achieved 99.98% accuracy for fruit classification class competition.</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="images/project1-2.jpg">
+                        <img src="images/course.png" alt="Project Image 2" data-position="top center">
+                    </a>
+                </div>
+            </section>
+            <section id="more-info" class="spotlights">
+                <div class="content project-details">
+                    <div class="inner">
+                        <header class="major">
+                        </header>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+</html>

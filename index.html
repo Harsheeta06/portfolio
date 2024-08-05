@@ -1,215 +1,282 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Harsheeta</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Harsheeta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .menu-icon {
+            font-size: 3em; /* Increase the size of the menu icon */
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .horizontal-list {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        .horizontal-list li {
+            display: flex;
+            align-items: center;
+            margin-right: 30px; /* Adjust spacing between items */
+        }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+        .horizontal-list li span {
+            margin-left: 10px;
+        }
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Harsheeta</h1>
-							</header>
-							<div class="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+        .horizontal-list li:last-child {
+            margin-right: 0;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        footer .inner {
+            text-align: center;
+            padding: 20px;
+        }
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article>
-							</section>
+        footer .inner h2 {
+            font-size: 45px;
+            margin-bottom: 40px; /* Increase space between heading and contact details */
+        }
 
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
+        a.no-underline {
+            text-decoration: none; /* Remove underline from these specific links */
+        }
 
-					</div>
+        a.no-underline:hover {
+            text-decoration: none; /* Ensure underline doesn't appear on hover */
+        }
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+        .back-to-top i {
+            color: #ff0000; /* Change this color to whatever you prefer */
+            font-size: 2em; /* Optional: Adjust the size if needed */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo" style="font-size: 2em;"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <nav>
+                <a href="#menu" class="menu-icon" style="font-size: 1.5em;">Menu</a>
+            </nav>
+        </header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 1.7em;">Home</a></li>
+                <li><a href="about.html" style="font-size: 1.7em;">About</a></li>
+                <li><a href="certifications.html" style="font-size: 1.7em;">Certificates</a></li>
+            </ul>
+        </nav>
 
-			</div>
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1 style="font-size: 45px;">Hi, I am Harsheeta</h1>
+                </header>
+                <div class="content">
+                    <p style="font-size: 22px;">Data-Driven Machine Learning Enthusiast Passionate About Wearable Technologies and building software products</p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div id="main">
+            <section id="one" class="tiles">
+                <article>
+                    <span class="image">
+                        <img src="assets/images/project1.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <div class="logo-text">
+                            <div>
+                                <h3><a href="project1.html" class="link">BOSCH: Multi-Modal Machine Learning Engineer Intern</a></h3>
+                                <p>Interned at BOSCH where I worked on handling multi-modal data from Apple Watch, AirPods, and videos from Apple iPhone</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="assets/images/project2.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <div class="logo-text">
+                            <div>
+                                <h3><a href="project2.html" class="link">Amazon Lab126: Machine Learning Engineer Intern</a></h3>
+                                <p>Developed and fine-tuned pretrained Mobile Net V2 model and deployed the model on Raspberry Pi considering size and accuracy constraints</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="assets/images/project3.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <div class="logo-text">
+                            <div>
+                                <h3><a href="project3.html" class="link">Quadrant Technologies: Software Intern</a></h3>
+                                <p>Built a React.js based application and deployed on Microsoft Azure cloud-based platform connecting MySQL database and providing insights through Power BI</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="assets/images/project4.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <div class="logo-text">
+                            <div>
+                                <h3><a href="project4.html" class="link">Youtube Clone</a></h3>
+                                <p>Scalable cloud-based application for video upload, processing, and hosting using Next.js, Node.js, and Google Cloud Platform services, integrating Firebase Authentication and Firestore.</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="assets/images/project5.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <div class="logo-text">
+                            <div>
+                                <h3><a href="project5.html" class="link">AI/Software Fellow</a></h3>
+                                <p>Developing 5 AI applications and APIs with 1000+ users by leveraging tools like NextJS, OpenAI, StripeAPI, GCP and AWS</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="assets/images/project6.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <div class="logo-text">
+                            <div>
+                                <h3><a href="project6.html" class="link">Built ML and deep learning models from scratch</a></h3>
+                                <p>Courses EE 511: Advanced Introduction to Machine Learning, CSE 599: Advanced Deep Learning</p>
+                            </div>
+                        </div>
+                    </header>
+                </article>
+            </section>
+            
+            <section id="certifications" class="major">
+                <div class="inner">
+                    <header class="major">
+                        <h2 style="font-size: 45px;">Certifications</h2>
+                    </header>
+                    <ul style="font-size: 35px;">
+                        <li><a href="certifications.html#cert1">Microsoft Certified Azure AI Engineer Associate</a></li>
+                        <li><a href="certifications.html#cert2">Microsoft Certified Azure Data Scientist Associate</a></li>
+                        <li><a href="certifications.html#cert3">IBM Data Scientist professional certificates</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="tech" class="major">
+                <div class="inner">
+                    <header class="major">
+                        <h2>All Things Tech</h2>
+                    </header>
+                    <div class="tiles">
+                        <article>
+                            <span class="image">
+                                <img src="images/equizen.jpg" alt="Tech Item One Description" />
+                            </span>
+                            <header class="major">
+                                <h3>Nucleate Accelerator Finals</h3>
+                                <p>Pitched a mental health care product at the demo day</p>
+                            </header>
+                        </article>
+                        <article>
+                            <span class="image">
+                                <img src="images/Harvard.png" alt="Tech Item Two Description" />
+                            </span>
+                            <header class="major">
+                                <h3>Harvard Conference</h3>
+                                <p>I was selected as a delegate to represent my country and discuss about key policies in AI and healthcare</p>
+                            </header>
+                        </article>
+                        <article>
+                            <span class="image">
+                                <img src="images/moderator.png" alt="Tech Item Three Description" />
+                            </span>
+                            <header class="major">
+                                <h3>Women in Data Science, Puget Sound conference</h3>
+                                <p>Moderator for ethics and AI panel at the conference</p>
+                            </header>
+                        </article>
+                        <article>
+                            <span class="image">
+                                <img src="images/stanford.png" alt="Tech Item Four Description" />
+                            </span>
+                            <header class="major">
+                                <h3>Women in Data Science global</h3>
+                                <p>Invited as a speaker at the WiDS conference, interviewed by TheCube silicon angel</p>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer id="footer">
+            <div class="inner">
+                <header class="major">
+                
+                </header>
+                <ul class="contact-list horizontal-list">
+                    <li>
+                        <a href="https://github.com/Harsheeta06" class="icon brands alt fa-github" style="font-size: 1.5em;">
+                            <span class="label">GitHub</span>
+                        </a>
+                        <span style="font-size: 1.5em; text-decoration: none;"><a href="https://github.com/Harsheeta06" class="no-underline">Harsheeta06</a></span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/harsheetav/" class="icon brands alt fa-linkedin-in" style="font-size: 1.5em;">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                        <span style="font-size: 1.5em; text-decoration: none;"><a href="https://www.linkedin.com/in/harsheetav/" class="no-underline">Harsheetav</a></span>
+                    </li>
+                    <li>
+                        <a href="mailto:harsheetamorey@gmail.com" class="icon solid alt fa-envelope" style="font-size: 1.5em;">
+                            <span class="label">Email</span>
+                        </a>
+                        <span style="font-size: 1.5em; text-decoration: none;">harsheetamorey@gmail.com</span>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Harsheeta</li>
+                </ul>
+            </div>
+        </footer>
 
-	</body>
+        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </div>
+</body>
 </html>
