@@ -3964,15 +3964,15 @@ input, select, textarea {
 			display: none;
 			transition: opacity 0.3s ease;
 		}*/
-		
+		/*
 		.scroll-to-top.visible {
 			display: block;
 			opacity: 1;
 		}
 		
 		.scroll-to-top:hover {
-			background: linear-gradient(to right, #555, #777); /* Adjust hover colors as needed */
-		}
+			background: linear-gradient(to right, #555, #777); Adjust hover colors as needed 
+		}*/
 		
 		
 		/* Larger Fonts and Improved Styling */
@@ -4606,3 +4606,100 @@ input, select, textarea {
 				margin: 10px 0;
 			}
 		}
+
+		/* Footer Contact List Styling */
+		.contact-list {
+			display: flex;
+			flex-direction: row;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.contact-list li {
+			display: flex;
+			align-items: center;
+			margin-right: 30px; /* Adjust spacing between items */
+		}
+
+		.contact-list li span,
+		.contact-list li a {
+			margin-left: 10px;
+		}
+
+		.contact-list li:last-child {
+			margin-right: 0;
+		}
+
+		footer .inner {
+			text-align: center;
+			padding: 20px;
+		}
+
+		footer .inner h2 {
+			font-size: 45px;
+			margin-bottom: 40px; /* Increase space between heading and contact details */
+		}
+
+		/* Remove underline from specific links */
+		a.no-underline {
+			text-decoration: none;
+		}
+
+		a.no-underline:hover {
+			text-decoration: none;
+		}
+
+		/* Media Queries for Mobile */
+		@media (max-width: 768px) {
+			/* Adjust menu icon size for mobile */
+			.menu-icon {
+				font-size: 2.0em; /* Increase size for mobile */
+			}
+
+			/* Adjust horizontal list to be vertical on mobile */
+			.contact-list {
+				flex-direction: column;
+			}
+
+			.contact-list li {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+
+			.contact-list li:last-child {
+				margin-bottom: 0;
+			}
+
+			/* Adjust header font size */
+			header .major h1 {
+				font-size: 1.2em; /* Reduce size for mobile */
+			}
+
+			.content p {
+				font-size: 1em; /* Reduce size for mobile */
+			}
+
+			/* Stack tiles vertically on mobile */
+			.tiles {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.tiles article {
+				flex: 1 1 100%; /* Full width on mobile */
+				margin: 10px 0;
+			}
+
+			footer .inner h2 {
+				font-size: 1.2em; /* Reduce footer heading size for mobile */
+			}
+
+			footer .inner span {
+				font-size: 1em; /* Reduce footer text size for mobile */
+			}
+		}
+
