@@ -7,43 +7,41 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Inline styles if necessary for specific adjustments */
+        .project-details {
+            padding: 20px; /* Add padding to create space around the content */
         }
-        .major h1, .major h3 {
-            font-size: 2.5em;
-            font-weight: bold;
-        }
-        .major p, .major ul {
-            font-size: 1.9em; /* Increased font size */
-        }
-        .content ul {
+
+        .project-details ul {
             list-style-type: disc;
             padding-left: 20px;
         }
-        .content ul li {
+
+        .project-details ul li {
             margin-bottom: 10px;
         }
-        .project-details p, .project-details li {
-            font-size: 1.7em; /* Increased font size */
-            line-height: 1.8; /* Adjusted line height for better readability */
-        }
+
         .spotlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
         }
+
         .spotlights .content {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
         .spotlights .image {
+            flex: 1;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
+
         .spotlights .image img {
             max-width: 100%;
             height: auto;
@@ -51,76 +49,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better appearance */
             margin-bottom: 20px; /* Space between images */
         }
-        ul.actions {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .tech-section {
-            margin: 50px 0;
-        }
-        .tech-section .inner {
-            display: flex;
-            flex-direction: column;
-        }
-        .tech-icons {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .tech-icons .icon {
-            width: 120px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: rotate(45deg);
-            background-color: rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            position: relative;
-        }
-        .tech-icons .icon i {
-            transform: rotate(-45deg);
-            font-size: 2em;
-            color: #fff;
-        }
-        .tech-icons .icon span {
-            position: absolute;
-            bottom: -30px;
-            transform: rotate(-45deg);
-            font-size: 0.9em;
-            text-align: center;
-            width: 120px;
-        }
 
         /* Media Queries for Mobile */
         @media (max-width: 768px) {
-            .major h1, .major h3 {
-                font-size: 1.5em; /* Reduce font size for mobile */
-            }
-            .major p, .major ul {
-                font-size: 1.2em; /* Reduce font size for mobile */
-            }
-            .project-details p, .project-details li {
-                font-size: 1.2em; /* Reduce font size for mobile */
-            }
             .spotlights {
-                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
-                gap: 10px; /* Reduce gap for mobile */
-            }
-            .spotlights .content {
-                margin-bottom: 20px; /* Add margin to separate content */
-            }
-            .tech-icons .icon {
-                width: 80px; /* Reduce icon size for mobile */
-                height: 80px; /* Reduce icon size for mobile */
-            }
-            .tech-icons .icon i {
-                font-size: 1.5em; /* Reduce icon font size for mobile */
-            }
-            .tech-icons .icon span {
-                bottom: -20px; /* Adjust positioning for mobile */
-                font-size: 0.7em; /* Reduce text size for mobile */
+                flex-direction: column;
+                gap: 10px;
             }
         }
     </style>
@@ -130,18 +64,16 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <a href="index.html" class="logo" style="font-size: 1.28em;"><strong>Home</strong> <span></span></a>
             <nav>
-             
+                <a href="#menu" class="menu-icon" style="font-size: 1.3em;">Menu</a>
             </nav>
         </header>
-
-        <!-- Menu -->
+        
         <nav id="menu">
-            
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 1.4em;">Home</a></li>
+                <li><a href="about.html" style="font-size: 1.4em;">About</a></li>
             </ul>
         </nav>
 
@@ -152,7 +84,6 @@
                     <h1>Fine-tuned a pre-trained Mobile Net V2 model and deployed on an edge device for a human classification task</h1>
                 </header>
                 <div class="content">
-                    <p></p>
                     <ul class="actions">
                         <li><a href="#details" class="button next scrolly">Learn More</a></li>
                     </ul>
@@ -169,11 +100,11 @@
                         <header class="major">
                             <h3>Project Details</h3>
                         </header>
-                        <p>Developed and fine-tuned pretrained MobileNetV2 model and deployed the model on Raspberry Pi considering size and accuracy constraints</p>
+                        <p>Developed and fine-tuned pretrained MobileNetV2 model and deployed the model on Raspberry Pi considering size and accuracy constraints.</p>
                         <ul>
                             <li>Preprocessed a bias-free human dataset and fine-tuned a pre-trained MobileNetV2 model for human classification.</li>
                             <li>Applied model compression techniques, including Pruning and Quantization-Aware Training (QAT), across both TensorFlow and PyTorch platforms, achieving a classification accuracy of 95.4%.</li>
-                            <li>Implemented and deployed the model on the Raspberry pi, achieving real-time processing capabilities and memory utilization, which reduced memory demand by 30% without compromising on accuracy.</li>
+                            <li>Implemented and deployed the model on the Raspberry Pi, achieving real-time processing capabilities and memory utilization, which reduced memory demand by 30% without compromising on accuracy.</li>
                         </ul>
                         <h3>More Information</h3>
                         <ul>
@@ -188,7 +119,7 @@
                     <a href="images/project1-2.jpg">
                         <img src="images/amazonlab126.png" alt="Project Image 2" data-position="top center">
                     </a>
-                    <a href="images/amazon2.png">
+                    <href="images/amazon2.png">
                         <img src="images/amazon2.png" alt="Project Image 3" data-position="top center">
                     </a>
                 </div>
@@ -212,5 +143,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="path/to/redirect.js"></script>
+
 </body>
 </html>

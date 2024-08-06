@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         body {
@@ -50,6 +49,46 @@
             color: #ddd;
         }
 
+        .contact-links {
+            margin-top: 30px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em; /* Increased icon size */
+        }
+
+        .contact-list li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff; /* Icon and text color */
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-list li a:hover {
+            background-color: #2e3a56; /* Background color on hover */
+            border-radius: 8px;
+        }
+
+        .contact-list li span {
+            margin-left: 10px;
+            font-size: 1em; /* Increased text size */
+            text-decoration: none;
+        }
+
         /* Media Queries for Mobile */
         @media (max-width: 768px) {
             .about-section {
@@ -76,6 +115,12 @@
             .about-text p {
                 font-size: 1.2em; /* Reduce font size for mobile */
             }
+            .contact-list {
+                flex-direction: column; /* Stack contacts vertically */
+            }
+            .contact-list li {
+                margin-bottom: 20px; /* Space between items */
+            }
         }
     </style>
 </head>
@@ -83,18 +128,16 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <a href="./" class="logo" style="font-size: 1.28em;"><strong>Home</strong> <span></span></a>
             <nav>
-               
+                <a href="#menu" class="menu-icon" style="font-size: 1.3em;">Menu</a>
             </nav>
         </header>
-
-        <!-- Menu -->
+        
         <nav id="menu">
-            
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 1.4em;">Home</a></li>
+                <li><a href="about.html" style="font-size: 1.4em;">About</a></li>
             </ul>
         </nav>
 
@@ -105,45 +148,28 @@
                 <p>Hello! I'm Harsheeta Venkoba Rao, a passionate Machine Learning Engineer and Software Developer. With a background in AI and data science, I love creating innovative solutions that leverage the power of modern web technologies and cloud platforms. I believe in continuous learning and consider myself a fast learner, constantly striving to enhance my skills and knowledge.</p>
                 
                 <p>I am a recent graduate from the University of Washington, Seattle, specializing in Machine Learning and Software Development. I have interned at BOSCH Research, Amazon Lab126, and Quadrant Technologies.</p>
-                <p>I have over two years of work experience at TATA Motors Ltd. and the Indian Institute of Technology, Madras.</p>
-               
-                <p>In addition to my software experience, I also have hardware experience, working with sensors and wearable technologies.</p>
-                <p>Whether it's building scalable web applications, developing machine learning models, or diving deep into data analytics, I'm always excited to tackle new challenges and make a meaningful impact. In my spare time, I enjoy reading and exploring new technologies.</p>
+                <p>Having over two years of work experience at TATA Motors Ltd. and the Indian Institute of Technology, Madras, I also have hardware experience, working with sensors and wearable technologies.</p>
+             
+                <p>Whether it is building scalable web applications, developing machine learning models, or diving deep into data analytics, I'm always excited to tackle new challenges and make a meaningful impact. In my spare time, I enjoy reading and exploring new technologies.</p>
                 <p>Let's connect! I'm eager to work on exciting projects and bring innovative ideas to life!</p>
-                
-                <div class="contact-links">
-                  
-                    <ul class="contact-list horizontal-list">
-                        <li>
-                            <a href="https://github.com/Harsheeta06" class="icon brands alt fa-github" style="font-size: 1.5em;">
-                                <span class="label">GitHub</span>
-                            </a>
-                            <span style="font-size: 1.2em; text-decoration: none;"><a href="https://github.com/Harsheeta06" class="no-underline">Harsheeta06</a></span>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/harsheetav/" class="icon brands alt fa-linkedin-in" style="font-size: 1.5em;">
-                                <span class="label">LinkedIn</span>
-                            </a>
-                            <span style="font-size: 1.2em; text-decoration: none;"><a href="https://www.linkedin.com/in/harsheetav/" class="no-underline">Harsheetav</a></span>
-                        </li>
-                        <li>
-                            <a href="mailto:harsheetamorey@gmail.com" class="icon solid alt fa-envelope" style="font-size: 1.5em;">
-                                <span class="label">Email</span>
-                            </a>
-                            <span style="font-size: 1.2em; text-decoration: none;">harsheetamorey@gmail.com</span>
-                        </li>
-                    </ul>
-                </div>
+                <p> Email: harsheetamorey@gmail.com</p>
             </div>
             <div class="about-image">
                 <img src="images/Harsheeta.png" alt="Harsheeta Venkoba Rao">
             </div>
         </section>
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/HarsheetaV" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/harsheetav/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:harsheetamorey@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+        </footer>
         
-       
+        
     </div>
-
-    
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -153,5 +179,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="path/to/redirect.js"></script>
+
 </body>
 </html>

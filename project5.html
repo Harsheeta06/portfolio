@@ -24,60 +24,38 @@
         .content ul li {
             margin-bottom: 10px;
         }
+        .project-details {
+            padding: 20px; /* Add padding to create space around the content */
+        }
         .project-details p, .project-details li {
             font-size: 1.75em; /* Increased font size */
             line-height: 1.8; /* Adjusted line height for better readability */
             text-align: justify; /* Justify text */
         }
         .spotlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
         }
         .spotlights .content {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         .spotlights .image {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .spotlights .image img {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
         }
         ul.actions {
             list-style-type: none;
             padding-left: 0;
-        }
-        .tech-section {
-            margin: 50px 0;
-        }
-        .tech-section .inner {
-            display: flex;
-            flex-direction: column;
-        }
-        .tech-icons {
-            display: flex;
-            justify-content: flex-end; /* Align icons to the right */
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .tech-icons .icon {
-            width: 120px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            position: relative;
-        }
-        .tech-icons .icon img {
-            max-width: 100%;
-            max-height: 100%;
         }
 
         /* Media Queries for Mobile */
@@ -92,22 +70,11 @@
                 font-size: 1.2em; /* Reduce font size for mobile */
             }
             .spotlights {
-                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
-                gap: 10px; /* Reduce gap for mobile */
+                flex-direction: column;
+                gap: 10px;
             }
             .spotlights .content {
                 margin-bottom: 20px; /* Add margin to separate content */
-            }
-            .tech-icons .icon {
-                width: 80px; /* Reduce icon size for mobile */
-                height: 80px; /* Reduce icon size for mobile */
-            }
-            .tech-icons .icon i {
-                font-size: 1.5em; /* Reduce icon font size for mobile */
-            }
-            .tech-icons .icon span {
-                bottom: -20px; /* Adjust positioning for mobile */
-                font-size: 0.7em; /* Reduce text size for mobile */
             }
         }
     </style>
@@ -117,18 +84,16 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <a href="index.html" class="logo" style="font-size: 1.28em;"><strong>Home</strong> <span></span></a>
             <nav>
-          
+                <a href="#menu" class="menu-icon" style="font-size: 1.3em;">Menu</a>
             </nav>
         </header>
-
-        <!-- Menu -->
-        <nav id="menu">
         
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 1.4em;">Home</a></li>
+                <li><a href="about.html" style="font-size: 1.4em;">About</a></li>
             </ul>
         </nav>
 
@@ -139,7 +104,6 @@
                     <h1>Development and Deployment of 5 AI Applications Using Cutting-Edge Technologies</h1>
                 </header>
                 <div class="content">
-                    <p></p>
                     <ul class="actions">
                         <li><a href="#details" class="button next scrolly">Learn More</a></li>
                     </ul>
@@ -150,21 +114,21 @@
         <!-- Main -->
         <div id="main">
             <!-- Project Details Section -->
-            <section id="more-info" class="spotlights">
+            <section id="details" class="spotlights">
                 <div class="content project-details">
                     <div class="inner">
                         <header class="major">
                             <h3>Project Description</h3>
                         </header>
-                        <p>Building 5+ AI app and APIs using NextJS, OpenAI, Pinecone, StripeAPI and shipping to 1000+ users</p>
+                        <p>Building 5+ AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI, and shipping to 1000+ users.</p>
                       
                         <p><strong>Project details:</strong></p>
                         <ul>
-                            <li>Project 1 Pantry Tracker: ReactJS NextJS Firebase</li>
-                            <li>Project 2 AI Customer Support: OpenAI NextJS AWS</li>
-                            <li>Project 3 AI Flashcards and Stripe: OpenAI Auth StripeAPI</li>
-                            <li>Project 4 AI Rate My Professor: RAG OpenAI Vectors</li>
-                            <li>Project 5 Team project working on building a real life use case to ship to 1000 users</li>
+                            <li>Project 1: Pantry Tracker - ReactJS, NextJS, Firebase</li>
+                            <li>Project 2: AI Customer Support - OpenAI, NextJS, AWS</li>
+                            <li>Project 3: AI Flashcards and Stripe - OpenAI, Auth, StripeAPI</li>
+                            <li>Project 4: AI Rate My Professor - RAG, OpenAI, Vectors</li>
+                            <li>Project 5: Team project working on building a real-life use case to ship to 1000 users</li>
                         </ul>
                     </div>
                 </div>
@@ -179,5 +143,8 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="path/to/redirect.js"></script>
+
+    </div>
 </body>
 </html>

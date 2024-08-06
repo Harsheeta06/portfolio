@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Projects - Harsheeta</title>
+    <title>Advanced AI Projects - Harsheeta</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -24,69 +24,39 @@
         .content ul li {
             margin-bottom: 10px;
         }
+        .project-details {
+            padding: 20px; /* Add padding to create space around the content */
+        }
         .project-details p, .project-details li {
-            font-size: 1.9em; /* Increased font size */
+            font-size: 1.75em; /* Increased font size */
             line-height: 1.8; /* Adjusted line height for better readability */
+            text-align: justify; /* Justify text */
         }
         .spotlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
         }
         .spotlights .content {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         .spotlights .image {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 20px; /* Add padding around the image */
         }
         .spotlights .image img {
-            max-width: 100%;
+            max-width: 80%; /* Reduce image size */
             height: auto;
         }
         ul.actions {
             list-style-type: none;
             padding-left: 0;
-        }
-        .tech-section {
-            margin: 50px 0;
-        }
-        .tech-section .inner {
-            display: flex;
-            flex-direction: column;
-        }
-        .tech-icons {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .tech-icons .icon {
-            width: 120px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: rotate(45deg);
-            background-color: rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            position: relative;
-        }
-        .tech-icons .icon i {
-            transform: rotate(-45deg);
-            font-size: 2em;
-            color: #fff;
-        }
-        .tech-icons .icon span {
-            position: absolute;
-            bottom: -30px;
-            transform: rotate(-45deg);
-            font-size: 0.9em;
-            text-align: center;
-            width: 120px;
         }
 
         /* Media Queries for Mobile */
@@ -101,22 +71,14 @@
                 font-size: 1.2em; /* Reduce font size for mobile */
             }
             .spotlights {
-                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
-                gap: 10px; /* Reduce gap for mobile */
+                flex-direction: column;
+                gap: 10px;
             }
             .spotlights .content {
                 margin-bottom: 20px; /* Add margin to separate content */
             }
-            .tech-icons .icon {
-                width: 80px; /* Reduce icon size for mobile */
-                height: 80px; /* Reduce icon size for mobile */
-            }
-            .tech-icons .icon i {
-                font-size: 1.5em; /* Reduce icon font size for mobile */
-            }
-            .tech-icons .icon span {
-                bottom: -20px; /* Adjust positioning for mobile */
-                font-size: 0.7em; /* Reduce text size for mobile */
+            .spotlights .image img {
+                max-width: 100%; /* Adjust image size for mobile */
             }
         }
     </style>
@@ -126,18 +88,16 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <a href="index.html" class="logo" style="font-size: 1.28em;"><strong>Home</strong> <span></span></a>
             <nav>
-       
+                <a href="#menu" class="menu-icon" style="font-size: 1.3em;">Menu</a>
             </nav>
         </header>
-
-        <!-- Menu -->
+        
         <nav id="menu">
-            
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 1.4em;">Home</a></li>
+                <li><a href="about.html" style="font-size: 1.4em;">About</a></li>
             </ul>
         </nav>
 
@@ -145,10 +105,9 @@
         <section id="banner" class="major">
             <div class="inner">
                 <header class="major">
-                    <h1>Developed Machine Learning Classifiers and Deep Learning Models From Scratch</h1>
+                    <h1>Advanced Machine Learning and Deep Learning Projects</h1>
                 </header>
                 <div class="content">
-                    <p></p>
                     <ul class="actions">
                         <li><a href="#details" class="button next scrolly">Learn More</a></li>
                     </ul>
@@ -163,28 +122,31 @@
                 <div class="content project-details">
                     <div class="inner">
                         <header class="major">
-                            <h3>Project Details</h3>
+                            <h3>Project Description</h3>
                         </header>
-                        <p>Built machine learning classifiers and deep learning models from scratch as part of the coursework at the University of Washington, Seattle.</p>
+                        <p>This project focuses on developing and deploying advanced machine learning and deep learning models from scratch. The models are designed to address complex real-world problems with high accuracy and efficiency.</p>
+                      
+                        <p><strong>Course Projects:</strong></p>
                         <ul>
-                            <li>EE 511: Advanced Introduction to Machine Learning, Prof. Jeff Bilmes</li>
-                            <li>CSE 599: Advanced Deep Learning, Prof. Ranjay Krishna</li>
+                            <li>Course 1: EE 511 - Advanced Introduction to Machine Learning</li>
+                            <li>Course 2: CSE 599 - Advanced Deep Learning</li>
                         </ul>
-                        <p>Achieved 99.98% accuracy for fruit classification class competition.</p>
+                        <p><strong>Project Highlights:</strong></p>
+                        <ul>
+                            <li>Developed a range of machine learning models using supervised and unsupervised learning techniques.</li>
+                            <li>Designed and implemented deep learning models for image and text data processing.</li>
+                            <li>Experimented with various architectures, including CNNs, RNNs, and Transformers.</li>
+                            <li>Fine-tuned pre-trained models to achieve higher accuracy on specific tasks.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="image">
-                    <a href="images/project1-2.jpg">
-                        <img src="images/course.png" alt="Project Image 2" data-position="top center">
+                    <href="images/project6-1.jpg">
+                        <img src="images/course.png" alt="Project Image 1" data-position="top center">
                     </a>
-                </div>
-            </section>
-            <section id="more-info" class="spotlights">
-                <div class="content project-details">
-                    <div class="inner">
-                        <header class="major">
-                        </header>
-                    </div>
+                    <a href="images/project6-2.jpg">
+                        <!-- Second image -->
+                    </a>
                 </div>
             </section>
         </div>
@@ -197,5 +159,8 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="path/to/redirect.js"></script>
+
+    </div>
 </body>
 </html>

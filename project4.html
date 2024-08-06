@@ -24,62 +24,28 @@
         .content ul li {
             margin-bottom: 10px;
         }
+        .project-details {
+            padding: 20px; /* Add padding to create space around the content */
+        }
         .project-details p, .project-details li {
             font-size: 1.75em; /* Increased font size */
             line-height: 1.8; /* Adjusted line height for better readability */
             text-align: justify; /* Justify text */
         }
         .spotlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
         }
         .spotlights .content {
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-        .spotlights .image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .spotlights .image img {
-            max-width: 100%;
-            height: auto;
         }
         ul.actions {
             list-style-type: none;
             padding-left: 0;
-        }
-        .tech-section {
-            margin: 50px 0;
-        }
-        .tech-section .inner {
-            display: flex;
-            flex-direction: column;
-        }
-        .tech-icons {
-            display: flex;
-            justify-content: flex-end; /* Align icons to the right */
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .tech-icons .icon {
-            width: 120px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            position: relative;
-            transform: none; /* Remove rotation */
-        }
-        .tech-icons .icon img {
-            max-width: 100%;
-            max-height: 100%;
-            transform: none; /* Remove rotation */
         }
 
         /* Media Queries for Mobile */
@@ -94,22 +60,11 @@
                 font-size: 1.2em; /* Reduce font size for mobile */
             }
             .spotlights {
-                grid-template-columns: 1fr; /* Stack elements vertically on mobile */
-                gap: 10px; /* Reduce gap for mobile */
+                flex-direction: column;
+                gap: 10px;
             }
             .spotlights .content {
                 margin-bottom: 20px; /* Add margin to separate content */
-            }
-            .tech-icons .icon {
-                width: 80px; /* Reduce icon size for mobile */
-                height: 80px; /* Reduce icon size for mobile */
-            }
-            .tech-icons .icon i {
-                font-size: 1.5em; /* Reduce icon font size for mobile */
-            }
-            .tech-icons .icon span {
-                bottom: -20px; /* Adjust positioning for mobile */
-                font-size: 0.7em; /* Reduce text size for mobile */
             }
         }
     </style>
@@ -119,18 +74,16 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="index.html" class="logo"><strong>Harsheeta</strong> <span>Venkoba Rao</span></a>
+            <a href="index.html" class="logo" style="font-size: 1.28em;"><strong>Home</strong> <span></span></a>
             <nav>
-                
+                <a href="#menu" class="menu-icon" style="font-size: 1.3em;">Menu</a>
             </nav>
         </header>
-
-        <!-- Menu -->
+        
         <nav id="menu">
-            
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 1.4em;">Home</a></li>
+                <li><a href="about.html" style="font-size: 1.4em;">About</a></li>
             </ul>
         </nav>
 
@@ -141,7 +94,6 @@
                     <h1>Youtube Clone: Mimics Core Functionalities Of Youtube App</h1>
                 </header>
                 <div class="content">
-                    <p></p>
                     <ul class="actions">
                         <li><a href="#details" class="button next scrolly">Learn More</a></li>
                     </ul>
@@ -152,7 +104,7 @@
         <!-- Main -->
         <div id="main">
             <!-- Project Details Section -->
-            <section id="more-info" class="spotlights">
+            <section id="details" class="spotlights">
                 <div class="content project-details">
                     <div class="inner">
                         <header class="major">
@@ -189,5 +141,8 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/redirect.js"></script>
+
+    </div>
 </body>
 </html>
